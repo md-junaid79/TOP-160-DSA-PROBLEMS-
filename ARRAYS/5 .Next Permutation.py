@@ -2,10 +2,13 @@ def nextPermutation(arr):
 
         l=len(arr)
         pivot=-1
+        #check for the pivot element 
+        #pivot is the first element from right which is smaller than its next element   
         for i in range(l-2,-1,-1):
             if arr[i]<arr[i+1]:
                 pivot=i
                 break
+        #if pivot is still -1 then return reverse of the array
         if pivot==-1:
             return arr[::-1]
         
