@@ -1,4 +1,4 @@
-def addBinary(self, s1, s2):
+def addBinary(s1, s2):
     # Remove leading zeroes
     s1 = s1.lstrip("0")
     s2 = s2.lstrip("0")
@@ -42,6 +42,10 @@ def addBinary(self, s1, s2):
     # Reverse the result and join to form the final binary string
     return ''.join(result[::-1])
 
+# Test the function
+s1 = "01001001"
+s2 = "0110101"
+print(addBinary(s1, s2))
 
 
 
