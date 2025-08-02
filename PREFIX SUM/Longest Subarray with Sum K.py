@@ -12,7 +12,7 @@ def maxLen(arr,k):
         elif sum-k in seen:
             maxlen=max(maxlen,i-seen[sum-k])
         else:
-            seen[sum]=i             #store the index of sum-k
+            seen[sum]=i             #store the index of sum
     return maxlen
     
     
