@@ -1,4 +1,4 @@
-def reverseArray(self, arr):
+def reverseArray(arr):
         
         #two pointer technique
         first=0
@@ -10,3 +10,5 @@ def reverseArray(self, arr):
             first+=1
             last-=1
         return arr
+A=[1,2,3,4,5]
+print(reverseArray(A))
